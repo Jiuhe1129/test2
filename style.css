@@ -1,21 +1,22 @@
-*{margin: 0; padding: 0; transition: .6s;}
+*{margin: 0; padding: 0;user-select: none;}
 a,li{text-decoration: none;list-style: none;}
-.box{width: 70%; margin: 0 auto;}
+::-webkit-scrollbar {display: none;}
+.box{width: 980px; margin: 0 auto;}
 .logo{width: 100%; background: #71b0dc;}
 .logo img{width: 30%;}
-.nav{ background-image: linear-gradient(45deg, #8ec3e8 50%, #14669f 50%); }
+.nav{background: linear-gradient(-45deg, #14669f 50%, #8dc2e7 50%);}
 .nav ul{width: 100%; height: 40px; display: flex; justify-content: space-between;}
 .nav ul li{width: 16.66%; text-align: center; line-height: 40px;}
-.nav ul li:hover{background: greenyellow;}
+.nav ul li:hover{background: #a0e75a;}
 .nav ul li a{color: #fff;}
 .banner img{width: 100%;}
-.banner .dian{width: 100%; display: flex; justify-content: center; position: relative; top: -20px;}
-.banner .dian>div{width: 10px;height: 10px; border-radius: 100px; margin: 0 2px;}
-.banner .dian-a{width: 9px; height: 9px; border: 1px solid #fff;}
-.banner .dian-b{background: #fff;}
+.banner .dian{width: 100%; display: flex; justify-content: center; position: relative; top: -16px;}
+.banner .dian a{width: 10px;height: 10px; border-radius: 50%; margin: 0 3px; background: linear-gradient(#fff, #eee); border: 1px solid #fff;}
+.banner .dian a:hover{background: transparent;}
+.banner .dian .dian-a{background: transparent;}
 .main-nr{display: flex; justify-content: space-around;}
-.main-nr dl{width: 30%; height: 35%; margin: 20px; text-align: center; line-height: 35px; position: relative;}
-.main-nr dl:hover{top: -5px; left: -5px; box-shadow: 0 0 10px black; color: #fdb14d;}
+.main-nr dl{width: 30%; height: 35%; margin: 10px; text-align: center; line-height: 35px; position: relative; font-size: 12px;transition: 500ms;}
+.main-nr dl:hover{top: -5px; left: -5px; box-shadow: 0 0 10px 1px black; color: orange; background: #eee;}
 .main-nr img{width: 100%;}
 .footer{width: 100%;height: 80px; background: #14669f; color: #fff; text-align: center; line-height: 80px;}
 @media screen and (max-width: 980px) {
@@ -23,10 +24,11 @@ a,li{text-decoration: none;list-style: none;}
     .box{width: 100%;}
     .logo{text-align: center;}
     .main-nr{flex-wrap: wrap;}
-    .main-nr dl{width: 40%; height: auto;}
+    .main-nr dl{width: 45%; height: auto;}
     #box-banner{width: 100%; height: auto;}
 }
 @media screen and (max-width: 700px) {
+    .nav ul li{font-size: 12px;}
     .main-nr{width: 100%;}
     .main-nr dl{width: 100%; height: auto;}
 }
